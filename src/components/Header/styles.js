@@ -58,6 +58,29 @@ export const NavUl = styled.ul`
         font-weight: bold;
         text-decoration: inherit;
     }
+    li > a {
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: -9px;
+            left: 0;
+            right: 0;
+            background-color: white;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s cubic-bezier(0.04, 0.77, 0.44, 1.01);
+        }
+        &:hover {
+            &::after {
+                visibility: visible;
+                opacity: 1;
+                transform: translateY(-6px);
+            }
+        }
+    }
 `;
 
 export const FirstNav = styled(NavUl)`
