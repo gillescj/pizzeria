@@ -16,7 +16,7 @@ export const Wrapper = styled.div`
 `;
 
 export const MiddleBanner = styled.div`
-    background: ${COLOURS.orange};
+    background: ${COLOURS.pink};
     padding: 1.5rem;
     grid-row: 1;
     grid-column: 1;
