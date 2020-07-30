@@ -2,6 +2,8 @@ export const COLOURS = {
     coral: '#FF847C',
     pink: '#E84A5F',
     veryDarkBlue: '#2A363B',
+    darkBlue: 'hsl(198, 57%, 40%)',
+    darkGrey: 'hsl(100,0%,40%)',
 };
 
 export const QUERIES = {
