@@ -28,9 +28,11 @@ const Header = () => {
                     </FirstNav>
                     <LogoContainer>
                         <span>Gatsby's</span>
-                        <SVGContainer>
-                            <PizzaSVG />
-                        </SVGContainer>
+                        <Link to="/">
+                            <SVGContainer>
+                                <PizzaSVG />
+                            </SVGContainer>
+                        </Link>
                         <span>Pizzeria</span>
                     </LogoContainer>
                     <SecondNav>

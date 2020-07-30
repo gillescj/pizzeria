@@ -32,6 +32,9 @@ export const NavContainer = styled.nav`
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     padding: 1rem;
+    a {
+        color: inherit;
+    }
 `;
 
 export const LogoContainer = styled.div`
