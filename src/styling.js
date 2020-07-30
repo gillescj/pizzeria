@@ -1,6 +1,7 @@
 export const COLOURS = {
-    coral: '#ff7f50',
-    orange: '#ff4400',
+    coral: '#FF847C',
+    pink: '#E84A5F',
+    veryDarkBlue: '#2A363B',
 };
 
 export const QUERIES = {
