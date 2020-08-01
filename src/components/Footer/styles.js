@@ -11,7 +11,7 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 2rem;
+    padding: 5rem;
     grid-gap: 5rem 2rem;
 
     @media (${QUERIES.large}) {
