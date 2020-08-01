@@ -16,7 +16,7 @@ const MainWrapper = styled.div`
     grid-template-columns: minmax(1rem, ${QUERIES.maxWidth});
     justify-content: center;
     main {
-        padding: 1rem;
+        padding: 2rem 1rem;
     }
 `;
 
