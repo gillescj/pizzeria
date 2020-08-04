@@ -12,7 +12,7 @@ const getImages = graphql`
                 name
                 id
                 childImageSharp {
-                    fluid {
+                    fluid(maxWidth: 1600) {
                         ...GatsbyImageSharpFluid
                     }
                 }
@@ -24,10 +24,11 @@ const getImages = graphql`
 const Container = styled.div`
     display: grid;
     grid-row-gap: 6rem;
+    padding: 0 2%;
 `;
 
 const ImageContainer = styled.div`
-    max-width: 50rem;
+    max-width: 80rem;
     @media (${QUERIES.medium}) {
         grid-row: 2;
     }
@@ -44,17 +45,21 @@ const MainSection = styled.section`
 `;
 
 const TextSection = styled.section`
-    display: grid;
-    justify-content: center;
-    align-content: center;
+    justify-self: center;
+    padding-top: 10%;
     h2 {
-        font-size: 4rem;
+        font-size: 6rem;
         color: ${COLOURS.pink};
-        padding-bottom: 1rem;
-        justify-self: center;
+        padding-bottom: 2rem;
+        justify-self: start;
     }
     p {
         max-width: 30rem;
+    }
+    @media (${QUERIES.large}) {
+        h2 {
+            font-size: 4rem;
+        }
     }
     @media (${QUERIES.medium}) {
         grid-row: 1;
@@ -69,7 +74,8 @@ const Button = styled.button`
     cursor: pointer;
     font-size: 1.25rem;
     width: 15rem;
-    justify-self: center;
+    margin: 0 auto;
+    display: block;
     a {
         color: inherit;
         text-decoration: inherit;
@@ -89,7 +95,10 @@ const Home = () => {
             <Container>
                 <MainSection direction="left">
                     <TextSection>
-                        <h2>have a slice</h2>
+                        <h2>
+                            have a<br />
+                            slice
+                        </h2>
                         <Button>
                             <Link to="menu">MENU</Link>
                         </Button>
@@ -121,7 +130,10 @@ const Home = () => {
                         />
                     </ImageContainer>
                     <TextSection>
-                        <h2>stay a while</h2>
+                        <h2>
+                            stay a<br />
+                            while
+                        </h2>
 
                         <p>
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio
