@@ -13,7 +13,7 @@ const Container = styled.div`
 
 const MainWrapper = styled.div`
     display: grid;
-    grid-template-columns: minmax(1rem, ${QUERIES.maxWidth});
+    grid-template-columns: minmax(1rem, ${QUERIES.maxContentWidth});
     justify-content: center;
     main {
         padding: 2rem 1rem;
