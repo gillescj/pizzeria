@@ -12,4 +12,5 @@ export const QUERIES = {
     large: 'max-width: 1100px',
     xLarge: 'max-width: 1400px',
     maxWidth: '1400px',
+    maxContentWidth: '2000px',
 };
