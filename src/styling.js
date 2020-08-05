@@ -5,6 +5,7 @@ export const COLOURS = {
     darkBlue: 'hsl(198, 57%, 40%)',
     darkGrey: 'hsl(100,0%,40%)',
     textMain: 'hsl(100,0%,15%)',
+    maroon: '#5a053e',
 };
 
 export const QUERIES = {
