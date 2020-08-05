@@ -27,7 +27,8 @@ const Footer = () => {
                 </InfoContainer>
                 <InfoContainer>
                     <h3>Phone</h3>
-                    <li>(111) 111-1111</li>
+                    <li>Delivery: (111) 111-1111</li>
+                    <li>House: (111) 111-1111</li>
                 </InfoContainer>
                 <InfoContainer>
                     <h3>Email</h3>
