@@ -25,9 +25,12 @@ export const Wrapper = styled.div`
 export const InfoContainer = styled.section`
     color: white;
     h3 {
-        padding-bottom: 2.5rem;
+        padding-bottom: 0.5rem;
+        margin-bottom: 2rem;
         text-transform: uppercase;
         font-weight: normal;
+        border-bottom: 1px solid white;
+        max-width: 15rem;
     }
 
     li {
