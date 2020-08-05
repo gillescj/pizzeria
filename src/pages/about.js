@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Layout from 'src/components/Layout';
 import { graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
+import PageHeader from 'src/components/PageHeader';
 
 const getImages = graphql`
     {
@@ -23,6 +24,7 @@ const Container = styled.div`
     display: grid;
     grid-template-columns: minmax(1rem, ${QUERIES.maxWidth});
     justify-content: center;
+    padding: 2rem 1rem;
 `;
 
 const Wrapper = styled.div`
@@ -67,7 +69,8 @@ const TextSection = styled.section`
 const About = () => {
     const data = useStaticQuery(getImages);
     return (
-        <Layout>
+        <Layout padding="0" maxWidth="100%">
+            <PageHeader pageName="About" />
             <Container>
                 <Wrapper>
                     <ImageContainer>
