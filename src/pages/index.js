@@ -29,6 +29,9 @@ const Container = styled.div`
 
 const ImageContainer = styled.div`
     max-width: 80rem;
+    border: solid 5px white;
+    border-radius: 5px;
+    box-shadow: 0 4px 20px hsla(0, 0%, 0%, 50%);
     @media (${QUERIES.medium}) {
         grid-row: 2;
     }
@@ -46,7 +49,7 @@ const MainSection = styled.section`
 
 const TextSection = styled.section`
     justify-self: center;
-    padding-top: 10%;
+    align-self: center;
     h2 {
         font-size: 6rem;
         color: ${COLOURS.pink};
@@ -73,12 +76,15 @@ const Button = styled.button`
     color: white;
     cursor: pointer;
     font-size: 1.25rem;
-    width: 15rem;
+    width: 18rem;
     margin: 0 auto;
     display: block;
     a {
         color: inherit;
         text-decoration: inherit;
+    }
+    @media (${QUERIES.large}) {
+        width: 15rem;
     }
 `;
 
