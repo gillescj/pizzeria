@@ -13,18 +13,22 @@ const Container = styled.div`
 
 const MainWrapper = styled.div`
     display: grid;
-    grid-template-columns: minmax(1rem, ${QUERIES.maxContentWidth});
+    grid-template-columns: minmax(1rem, ${(props) => props.maxWidth});
     justify-content: center;
     main {
-        padding: 2rem 1rem;
+        padding: ${(props) => props.padding};
     }
 `;
 
-const Layout = ({ children }) => {
+const Layout = ({
+    children,
+    maxWidth = QUERIES.maxContentWidth,
+    padding = '2rem 1rem',
+}) => {
     return (
         <Container>
             <Header />
-            <MainWrapper>
+            <MainWrapper maxWidth={maxWidth} padding={padding}>
                 <main>{children}</main>
             </MainWrapper>
             <Footer />
