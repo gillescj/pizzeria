@@ -32,6 +32,7 @@ const Footer = () => {
                 </InfoContainer>
                 <InfoContainer>
                     <h3>Email</h3>
+                    <li>fake-email@fake.com</li>
                 </InfoContainer>
             </Wrapper>
         </Container>
