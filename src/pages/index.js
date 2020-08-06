@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Layout from 'src/components/Layout';
 import { graphql, useStaticQuery, Link } from 'gatsby';
 import Img from 'gatsby-image';
+import Button from 'src/components/Button';
 
 const getImages = graphql`
     {
@@ -54,7 +55,7 @@ const TextSection = styled.section`
         font-size: 6rem;
         color: ${COLOURS.pink};
         padding-bottom: 2rem;
-        justify-self: start;
+        text-align: center;
     }
     p {
         max-width: 30rem;
@@ -66,25 +67,6 @@ const TextSection = styled.section`
     }
     @media (${QUERIES.medium}) {
         grid-row: 1;
-    }
-`;
-
-const Button = styled.button`
-    background: ${COLOURS.pink};
-    padding: 0.5rem;
-    border: 3px solid ${COLOURS.coral};
-    color: white;
-    cursor: pointer;
-    font-size: 1.25rem;
-    width: 18rem;
-    margin: 0 auto;
-    display: block;
-    a {
-        color: inherit;
-        text-decoration: inherit;
-    }
-    @media (${QUERIES.large}) {
-        width: 15rem;
     }
 `;
 

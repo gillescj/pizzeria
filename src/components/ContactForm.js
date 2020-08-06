@@ -1,6 +1,7 @@
 import React from 'react';
 import { COLOURS } from 'src/styling';
 import styled from 'styled-components';
+import Button from 'src/components/Button';
 
 const Container = styled.div`
     background: white;
@@ -21,22 +22,6 @@ const Textarea = styled.textarea`
     padding: 1rem;
     font-size: 1.2rem;
     height: 12rem;
-`;
-
-const Button = styled.button`
-    background: ${COLOURS.pink};
-    padding: 0.5rem;
-    border: 3px solid ${COLOURS.coral};
-    color: white;
-    cursor: pointer;
-    font-size: 1.25rem;
-    width: 18rem;
-    margin: 0 auto;
-    display: block;
-    a {
-        color: inherit;
-        text-decoration: inherit;
-    }
 `;
 
 const ContactForm = () => {
