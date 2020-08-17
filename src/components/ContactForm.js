@@ -22,6 +22,7 @@ const Textarea = styled.textarea`
     padding: 1rem;
     font-size: 1.2rem;
     height: 12rem;
+    resize: none;
 `;
 
 const ContactForm = () => {
