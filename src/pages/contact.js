@@ -70,6 +70,9 @@ const MapForm = styled.section`
     @media (${QUERIES.medium}) {
         grid-template-columns: 1fr;
         grid-gap: 4rem;
+        & > div {
+            min-height: 20rem;
+        }
     }
 `;
 
