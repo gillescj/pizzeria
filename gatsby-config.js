@@ -5,6 +5,7 @@ module.exports = {
         `gatsby-plugin-sharp`,
         `gatsby-plugin-root-import`,
         'gatsby-plugin-react-svg',
+        'gatsby-plugin-react-leaflet',
         {
             resolve: `gatsby-source-filesystem`,
             options: {
