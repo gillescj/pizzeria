@@ -1,5 +1,7 @@
 import React from 'react';
+import { QUERIES } from 'src/styling';
 import styled from 'styled-components';
+import MenuItem from './MenuItem';
 
 const Container = styled.section``;
 
@@ -28,18 +30,31 @@ const Subheader = styled.h4`
     text-align: center;
     width: 100%;
     font-size: 1.2rem;
+    padding-bottom: 4rem;
 `;
 
-const MenuItem = styled.section``;
+const MenuItemContainer = styled.div`
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    @media (${QUERIES.medium}) {
+        grid-template-columns: 1fr;
+    }
+`;
 
 const MenuSection = () => {
     return (
         <Container>
             <MenuHeader>Slice City</MenuHeader>
             <Subheader>Gourmet Pizzas</Subheader>
-            <div>
-                <MenuItem></MenuItem>
-            </div>
+            <MenuItemContainer>
+                <MenuItem />
+                <MenuItem />
+                <MenuItem />
+                <MenuItem />
+                <MenuItem />
+                <MenuItem />
+            </MenuItemContainer>
         </Container>
     );
 };
