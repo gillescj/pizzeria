@@ -42,19 +42,23 @@ const MenuItemContainer = styled.div`
     }
 `;
 
-const MenuSection = () => {
+const MenuSection = ({ info: { heading, subHeading }, sectionItems }) => {
+    const renderedSectionItems = sectionItems.map((item) => {
+        return (
+            <MenuItem
+                title={item.title}
+                price={item.price}
+                description={item.description}
+                vegetarian={item.vegetarian}
+            />
+        );
+    });
+
     return (
         <Container>
-            <MenuHeader>Slice City</MenuHeader>
-            <Subheader>Gourmet Pizzas</Subheader>
-            <MenuItemContainer>
-                <MenuItem />
-                <MenuItem />
-                <MenuItem />
-                <MenuItem />
-                <MenuItem />
-                <MenuItem />
-            </MenuItemContainer>
+            <MenuHeader>{heading}</MenuHeader>
+            <Subheader>{subHeading}</Subheader>
+            <MenuItemContainer>{renderedSectionItems}</MenuItemContainer>
         </Container>
     );
 };

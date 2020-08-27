@@ -20,21 +20,15 @@ const Header = styled.header`
     }
 `;
 
-const MenuItem = () => {
+const MenuItem = ({ title, price, description, vegetarian }) => {
     return (
         <Container>
             <Header>
-                <h6>Pepperoni Pizza</h6>
-                <span>$12.50</span>
+                <h6>{title}</h6>
+                <span>{price}</span>
             </Header>
-            <p>
-                Bushwick fam chia pug, man braid PBR&B mlkshk vaporware enamel pin
-                mumblecore occupy. Succulents iceland stumptown, XOXO fixie tilde
-                biodiesel DIY palo santo vape shoreditch venmo drinking vinegar.
-            </p>
-            <div>
-                <LeafSVG />
-            </div>
+            <p>{description}</p>
+            <div>{vegetarian ? <LeafSVG /> : null}</div>
         </Container>
     );
 };
