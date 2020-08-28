@@ -1,4 +1,5 @@
 import React from 'react';
+import { COLOURS } from 'src/styling';
 import styled from 'styled-components';
 import LeafSVG from 'src/assets/svgs/leaf.svg';
 
@@ -18,6 +19,7 @@ const Header = styled.header`
         text-transform: uppercase;
         font-weight: 600;
         font-size: 1.2rem;
+        color: ${COLOURS.veryDarkGrey};
     }
 `;
 
