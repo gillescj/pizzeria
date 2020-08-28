@@ -8,7 +8,7 @@ import menuList from 'src/utilss/menuList';
 const Container = styled.div`
     display: grid;
     grid-gap: 7rem;
-    grid-template-columns: minmax(1rem, 60rem);
+    grid-template-columns: minmax(1rem, 70rem);
     justify-content: center;
     padding: 2rem 1rem;
 `;
