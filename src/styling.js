@@ -4,6 +4,7 @@ export const COLOURS = {
     veryDarkBlue: '#2A363B',
     darkBlue: 'hsl(198, 57%, 40%)',
     darkGrey: 'hsl(100,0%,40%)',
+    veryDarkGrey: 'hsl(100,0%,10%)',
     textMain: 'hsl(100,0%,15%)',
     maroon: '#5a053e',
 };
