@@ -15,9 +15,14 @@ const Header = styled.header`
     display: flex;
     justify-content: space-between;
     h6 {
-        font-weight: bold;
-        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1.2rem;
     }
+`;
+
+const Description = styled.p`
+    line-height: 1.8;
 `;
 
 const MenuItem = ({ title, price, description, vegetarian }) => {
@@ -27,7 +32,7 @@ const MenuItem = ({ title, price, description, vegetarian }) => {
                 <h6>{title}</h6>
                 <span>{price}</span>
             </Header>
-            <p>{description}</p>
+            <Description>{description}</Description>
             <div>{vegetarian ? <LeafSVG /> : null}</div>
         </Container>
     );
