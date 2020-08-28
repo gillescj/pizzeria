@@ -12,6 +12,7 @@ const MenuHeader = styled.h3`
     text-align: center;
     width: 100%;
     font-size: 2rem;
+    font-weight: 600;
     padding-bottom: 0.4rem;
     &::before,
     &::after {
@@ -30,6 +31,7 @@ const Subheader = styled.h4`
     text-align: center;
     width: 100%;
     font-size: 1.2rem;
+    font-weight: 600;
     padding-bottom: 4rem;
 `;
 
