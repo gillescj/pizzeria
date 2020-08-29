@@ -25,17 +25,30 @@ const Header = styled.header`
     }
 `;
 
+const Price = styled.span`
+    text-align: end;
+`;
+
 const Description = styled.p`
     line-height: 1.8;
     color: ${COLOURS.textSecondary};
 `;
 
 const MenuItem = ({ title, price, description, vegetarian }) => {
+    let renderedPrice;
+    if (typeof price != 'string') {
+        renderedPrice = price.map((priceItem) => {
+            return <li>{priceItem}</li>;
+        });
+    } else {
+        renderedPrice = price;
+    }
+
     return (
         <Container>
             <Header>
                 <h6>{title}</h6>
-                <span>{price}</span>
+                <Price>{renderedPrice}</Price>
             </Header>
             {!description ? null : (
                 <>
