@@ -6,6 +6,7 @@ export const COLOURS = {
     darkGrey: 'hsl(100,0%,40%)',
     veryDarkGrey: 'hsl(100,0%,10%)',
     textMain: 'hsl(100,0%,15%)',
+    textSecondary: '#333',
     maroon: '#5a053e',
 };
 
