@@ -6,6 +6,7 @@ import LeafSVG from 'src/assets/svgs/leaf.svg';
 const Container = styled.section`
     display: grid;
     grid-gap: 0.75rem;
+    align-content: start;
     svg {
         width: 18px;
         height: 18px;
