@@ -10,6 +10,7 @@ const Container = styled.section`
     svg {
         width: 18px;
         height: 18px;
+        fill: ${COLOURS.textSecondary};
     }
 `;
 
@@ -20,12 +21,13 @@ const Header = styled.header`
         text-transform: uppercase;
         font-weight: 600;
         font-size: 1.2rem;
-        color: ${COLOURS.veryDarkGrey};
+        color: ${COLOURS.textMain};
     }
 `;
 
 const Description = styled.p`
     line-height: 1.8;
+    color: ${COLOURS.textSecondary};
 `;
 
 const MenuItem = ({ title, price, description, vegetarian }) => {

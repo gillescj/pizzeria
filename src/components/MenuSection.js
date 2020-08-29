@@ -1,5 +1,5 @@
 import React from 'react';
-import { QUERIES } from 'src/styling';
+import { QUERIES, COLOURS } from 'src/styling';
 import styled from 'styled-components';
 import MenuItem from './MenuItem';
 
@@ -14,11 +14,12 @@ const MenuHeader = styled.h3`
     font-size: 2rem;
     font-weight: 600;
     padding-bottom: 0.4rem;
+    color: ${COLOURS.textMain};
     &::before,
     &::after {
         content: '';
-        border-top: 3px solid black;
-        color: black;
+        border-top: 3px solid ${COLOURS.textMain};
+        color: ${COLOURS.textMain};
         flex: 1 0 20px;
         margin: 0 1rem;
     }
@@ -33,6 +34,7 @@ const Subheader = styled.h4`
     font-size: 1.2rem;
     font-weight: 600;
     padding-bottom: 4rem;
+    color: ${COLOURS.textMain};
 `;
 
 const MenuItemContainer = styled.div`
