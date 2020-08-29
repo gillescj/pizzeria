@@ -1,4 +1,4 @@
-const menuList = [
+export const menuList = [
     {
         name: 'starters',
         info: { heading: 'Starters', subHeading: 'Appetizers and Shareables' },
@@ -173,4 +173,213 @@ const menuList = [
     },
 ];
 
-export default menuList;
+export const drinkMenuList = [
+    {
+        name: 'craft beer',
+        info: { heading: 'Craft Beer', subHeading: 'Something New' },
+        sectionItems: [
+            {
+                title: 'Hazy IPA',
+                price: '$8.50',
+                description: `Accusamus doloremque eos minima. Voluptatibus officia velit et minima libero nulla quo sit. Ut vel doloribus et blanditiis. Autem perspiciatis iure distinctio. Velit sint quas numquam blanditiis.`,
+            },
+            {
+                title: 'Sour',
+                price: '$9.50',
+                description: `Omnis ut et alias. Dolor tempore fugiat id amet officia aut eos sint. Est iure qui pariatur est. Excepturi consequatur qui et amet iste facilis beatae.`,
+            },
+            {
+                title: 'Pilsner',
+                price: '$8.00',
+                description: `Quidem sed quia quia nihil. Sed odio vel architecto commodi fuga perferendis facere quod. Earum quia quia reiciendis. Repellendus natus ut quia. Quaerat iste possimus optio.`,
+            },
+            {
+                title: 'Pale Ale',
+                price: '$9.50',
+                description: `Voluptatem omnis aut voluptas consequuntur possimus ipsum harum. Ipsam officiis corporis hic sed voluptatem modi. Et voluptates error veniam iure alias esse error.`,
+            },
+            {
+                title: 'Porter',
+                price: '$11.50',
+                description: `Eveniet eius molestiae et voluptatem officia et dolore. Optio ut quia dolores et omnis. Fugit ea sit quidem.`,
+            },
+            {
+                title: 'Wheat Beer',
+                price: '$9.00',
+                description: `Voluptate sunt earum impedit explicabo a. Veritatis ea vel harum laboriosam. Quaerat vitae praesentium magni sed in iste.`,
+            },
+        ],
+    },
+    {
+        name: 'beer',
+        info: { heading: 'Beer', subHeading: 'Good Old Classic' },
+        sectionItems: [
+            {
+                title: 'Coors Banquet',
+                price: '$7.00',
+            },
+            {
+                title: 'Coors Lite',
+                price: '$6.50',
+            },
+            {
+                title: 'Budweiser',
+                price: '$6.50',
+            },
+            {
+                title: 'Corona',
+                price: '$6.50',
+            },
+            {
+                title: 'Rolling Rock',
+                price: '$6.50',
+            },
+            {
+                title: 'Miller Light',
+                price: '$6.50',
+            },
+            {
+                title: 'Miller Genuine Draft',
+                price: '$7.00',
+            },
+            {
+                title: 'Guinness',
+                price: '$8.00',
+            },
+        ],
+    },
+    {
+        name: 'wine',
+        info: { heading: 'Wine' },
+        sectionItems: [
+            {
+                title: 'Merlot',
+                price: ['6oz - $7.50', '9oz - $9.50', 'Bottle - $30'],
+                description: `Laudantium excepturi reprehenderit dolor. Doloribus sit eligendi quia. Maxime non distinctio minima nihil adipisci qui iusto. Temporibus fugit molestiae sequi commodi omnis similique qui.`,
+            },
+            {
+                title: 'Shiraz',
+                price: ['6oz - $9.50', '9oz - $11.50', 'Bottle - $40'],
+                description: `Laboriosam voluptatem sint dolorem velit. In cumque ut aliquam adipisci exercitationem explicabo. Autem error sed voluptates provident reiciendis aut aliquam.`,
+            },
+            {
+                title: 'Chardonnay',
+                price: ['6oz - $9.00', '9oz - $13.00', 'Bottle - $35'],
+                description: `Repellendus perferendis quisquam et quasi. Temporibus ut necessitatibus enim dolores eos. Quaerat sapiente tempore accusamus assumenda quo.`,
+            },
+            {
+                title: 'Sauvignon Blanc',
+                price: ['6oz - $11.50', '9oz - $15.00', 'Bottle - $50'],
+                description: `Adipisci alias deserunt sed consequatur esse reprehenderit. Sint accusantium modi earum natus harum facere. Facere enim eos possimus quod et quia.`,
+            },
+            {
+                title: 'Pinot Grigio',
+                price: ['6oz - $7.00', '9oz - $9.00', 'Bottle - $27'],
+                description: `Aut omnis fugiat delectus qui. Dolore expedita quia et sint. Est odio est et odio ea illum dolorem.`,
+            },
+        ],
+    },
+    {
+        name: 'cocktails',
+        info: { heading: 'Cocktails' },
+        sectionItems: [
+            {
+                title: 'Raspberry Lemonade',
+                price: '$8.50',
+                description: `Id veritatis accusamus quae laudantium tenetur sequi. Modi illum laboriosam odio voluptas hic quasi quidem quisquam. Non id id placeat asperiores autem ad. Cum dolores incidunt quis.`,
+            },
+            {
+                title: 'Mojito',
+                price: '$9.50',
+                description: `Dolor in maiores est molestias nulla. Vel et qui dolorem molestiae qui alias cumque sunt. Voluptatum asperiores labore vero neque. Reiciendis molestias nostrum itaque perferendis ea recusandae.`,
+            },
+            {
+                title: 'Old Fashioned',
+                price: '$10.00',
+                description: `Ipsa aut laboriosam sunt voluptas. Sit voluptate autem beatae. Commodi adipisci enim dolorum. Dolorem impedit et mollitia fuga laboriosam rerum et.`,
+            },
+            {
+                title: 'Margarita',
+                price: '$8.50',
+                description: `Dolor quisquam architecto non voluptas. Ipsum qui fuga et dolores consectetur. Ut in repellendus occaecati repellat qui magnam aut et. Eveniet minus officiis qui quia consequatur aut modi minima.`,
+            },
+            {
+                title: 'Caesar',
+                price: '$8.00',
+                description: `Ut et cumque impedit nemo dolorem laborum molestiae. Dicta repellendus accusantium saepe modi blanditiis qui quisquam. Nam deleniti officiis qui aut.`,
+            },
+            {
+                title: 'Sangria',
+                price: '$10.50',
+                description: `Placeat aut voluptate et. Aut animi non omnis. Ea rerum possimus esse sint. Exercitationem ullam deserunt et perspiciatis. Eveniet voluptatibus beatae reprehenderit fuga.`,
+            },
+            {
+                title: 'Margarita',
+                price: '$10.50',
+                description: `Nobis harum odio nihil. Iusto assumenda aut iste ipsum. Est quia sunt sed. Esse maxime quo labore.`,
+            },
+            {
+                title: 'Moscow Mule',
+                price: '$10.00',
+                description: `Quod necessitatibus fugiat natus. Aut odit vel nemo. Quam in voluptatem recusandae est. Voluptas ut earum ut. Nobis iure id et ad assumenda omnis ab.`,
+            },
+        ],
+    },
+    {
+        name: 'spirits',
+        info: { heading: 'Spirits' },
+        sectionItems: [
+            {
+                title: 'Vodka',
+                price: '$8.50',
+            },
+            {
+                title: 'Rye Whiskey',
+                price: '$9.50',
+            },
+            {
+                title: 'Scotch',
+                price: '$10.00',
+            },
+            {
+                title: 'Tequila',
+                price: '$8.50',
+            },
+            {
+                title: 'Gin',
+                price: '$8.00',
+            },
+            {
+                title: 'Bourbon',
+                price: '$10.50',
+            },
+        ],
+    },
+    {
+        name: 'non alcoholic',
+        info: { heading: 'Non Alcoholic' },
+        sectionItems: [
+            {
+                title: 'Cola',
+                price: '$3.50',
+            },
+            {
+                title: 'Ginger Ale',
+                price: '$3.50',
+            },
+            {
+                title: 'Root Beer',
+                price: '$3.50',
+            },
+            {
+                title: 'Iced Tea',
+                price: '$3.50',
+            },
+            {
+                title: 'Milkshakes',
+                price: '$7.50',
+                description: `Recusandae maiores iste aut. Explicabo in ipsam qui voluptatem similique cumque suscipit blanditiis. Exercitationem quis minus vitae aperiam harum quas maiores.`,
+            },
+        ],
+    },
+];
