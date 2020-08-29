@@ -87,9 +87,9 @@ const Home = () => {
                             have a<br />
                             slice
                         </h2>
-                        <Button>
-                            <Link to="menu">MENU</Link>
-                        </Button>
+                        <Link to="/menu">
+                            <Button>MENU</Button>
+                        </Link>
                     </TextSection>
                     <ImageContainer>
                         <Img
@@ -133,9 +133,9 @@ const Home = () => {
                 <MainSection direction="left">
                     <TextSection>
                         <h2>order out</h2>
-                        <Button>
-                            <Link to="delivery">DELIVERY</Link>
-                        </Button>
+                        <Link to="/delivery">
+                            <Button>DELIVERY</Button>
+                        </Link>
                     </TextSection>
                     <ImageContainer>
                         <Img
