@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Layout from 'src/components/Layout';
 import PageHeader from 'src/components/PageHeader';
 import MenuSection from '../components/MenuSection';
-import menuList from 'src/utils/menuList';
+import { menuList } from 'src/utils/menuLists';
 
 const Container = styled.div`
     display: grid;
