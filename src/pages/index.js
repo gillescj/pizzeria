@@ -98,6 +98,7 @@ const Home = () => {
                                     (image) => image.name === 'pizza-birds-eye'
                                 )[0].childImageSharp.fluid
                             }
+                            alt="Whole pizza sitting on a wooden table"
                         />
                     </ImageContainer>
                 </MainSection>
@@ -115,6 +116,7 @@ const Home = () => {
                                 )[0].childImageSharp.fluid,
                                 aspectRatio: 16 / 9,
                             }}
+                            alt="Indoor pizzeria restaurant seating next to a window"
                         />
                     </ImageContainer>
                     <TextSection>
@@ -143,6 +145,7 @@ const Home = () => {
                                 images.filter((image) => image.name === 'pizza-box')[0]
                                     .childImageSharp.fluid
                             }
+                            alt="Margherita pizza inside a pizza box"
                         />
                     </ImageContainer>
                 </MainSection>
