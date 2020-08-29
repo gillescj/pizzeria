@@ -37,8 +37,12 @@ const MenuItem = ({ title, price, description, vegetarian }) => {
                 <h6>{title}</h6>
                 <span>{price}</span>
             </Header>
-            <Description>{description}</Description>
-            <div>{vegetarian ? <LeafSVG /> : null}</div>
+            {!description ? null : (
+                <>
+                    <Description>{description}</Description>
+                    <div>{vegetarian ? <LeafSVG /> : null}</div>
+                </>
+            )}
         </Container>
     );
 };
