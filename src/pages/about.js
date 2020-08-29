@@ -87,25 +87,25 @@ const About = () => {
                     <TextSection>
                         <h2>Our Story</h2>
                         <p>
-                            I'm baby coloring book 8-bit tacos fanny pack hella DIY
-                            ethical thundercats seitan actually VHS truffaut leggings
-                            beard small batch. Roof party flannel intelligentsia fashion
-                            axe +1 gastropub. Gochujang pug quinoa vaporware narwhal
-                            keffiyeh four loko kogi tote bag. Cornhole tbh flannel fam.
-                            Retro dreamcatcher locavore letterpress stumptown shaman
-                            sartorial pitchfork. Lyft kogi bushwick iPhone cray artisan.
-                            Stumptown cornhole marfa drinking vinegar +1 street art 3 wolf
-                            moon you probably haven't heard of them everyday carry
-                            gentrify brunch freegan bushwick before they sold out
-                            adaptogen.
+                            Facere consequatur sit praesentium. Saepe aliquam deserunt
+                            veniam ex. Ut repellendus ut repellendus harum ipsam sed
+                            velit. Velit non tempora rerum pariatur quis sint. Quo
+                            consequuntur laborum expedita in sunt vero. Rerum quam in ut
+                            dolores magni reiciendis. Enim necessitatibus expedita quod
+                            illum vitae et nesciunt est. Voluptas odit assumenda eligendi.
+                            Ullam et consectetur perferendis qui accusamus et. Voluptatem
+                            cumque facilis hic sit quasi rerum ut delectus. Quisquam
+                            nesciunt eos soluta odit in quam tenetur. Illo reiciendis
+                            beatae excepturi. Itaque ea aperiam porro velit culpa
+                            voluptatem. Cum iure culpa minus nostrum sed rerum. Voluptas
+                            officiis dolorem quis hic dolorem nostrum.
                         </p>
                         <p>
-                            Blue bottle banh mi leggings blog. Prism kogi chartreuse
-                            sustainable normcore. Yuccie tousled fanny pack subway tile,
-                            air plant lyft tattooed disrupt gentrify fingerstache photo
-                            booth shabby chic gochujang hot chicken mumblecore.
-                            Asymmetrical tacos jean shorts listicle butcher williamsburg
-                            direct trade.
+                            Et eaque fugit quas qui autem ut dicta amet. Sunt asperiores
+                            eum et ut porro qui. Fugiat ut deserunt sed fugiat eveniet. Et
+                            expedita qui aut et sit accusantium excepturi eius. Et
+                            corrupti omnis inventore fugit. Est est adipisci qui impedit
+                            nisi excepturi.
                         </p>
                     </TextSection>
                 </Wrapper>

@@ -83,21 +83,21 @@ const Contact = () => {
             <Container>
                 <TextDetails>
                     <p>
-                        Green juice sartorial crucifix butcher ramps. Live-edge twee 90's
-                        plaid bitters crucifix. Yuccie kitsch bitters meditation pitchfork
-                        chartreuse lo-fi bicycle rights 8-bit synth hoodie slow-carb
-                        coloring book marfa. Kitsch celiac normcore tacos.
+                        Atque nihil at dolorem explicabo qui natus velit. Exercitationem
+                        error sequi deserunt. Harum necessitatibus voluptates magnam
+                        maiores dolorem et. Reprehenderit sed quis ut similique iste.
+                        Quisquam officiis quae assumenda ut.
                     </p>
                     <p>
-                        DIY mixtape williamsburg beard, vape tote bag pop-up cornhole
-                        viral. Wolf fashion axe single-origin coffee, banh mi glossier
-                        microdosing lumbersexual woke chicharrones chia occupy lo-fi ennui
-                        quinoa flannel.
+                        Autem qui eveniet modi libero adipisci est eum itaque. Et ut
+                        soluta et culpa distinctio est. Debitis mollitia ducimus quo quia
+                        modi non eveniet. Sint et dolor in doloremque sint. Suscipit
+                        labore asperiores sint repellat.
                     </p>
                     <p>
-                        Art party schlitz disrupt plaid. VHS bespoke put a bird on it man
-                        braid 90's. Heirloom scenester tilde lumbersexual vexillologist
-                        craft beer umami.
+                        Error laudantium et sed earum. Facere molestiae sunt impedit. Vero
+                        et et qui quisquam perferendis iure officiis dolorem. Quia est
+                        odit perspiciatis nesciunt nemo est aspernatur.
                     </p>
                 </TextDetails>
                 <ContactInfo>
