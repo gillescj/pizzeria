@@ -1,5 +1,5 @@
 import React from 'react';
-import { QUERIES } from 'src/styling';
+import { COLOURS, QUERIES } from 'src/styling';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import PizzaSVG from 'src/assets/svgs/pizza.svg';
@@ -23,10 +23,20 @@ const LogoContainer = styled.div`
     justify-content: center;
     align-items: center;
     z-index: 2;
+    svg {
+        transition: filter 300ms;
+    }
     span {
-        color: white;
-        font-size: 2rem;
-        font-family: 'Dancing Script', cursive;
+        a {
+            color: white;
+            font-size: 2.4rem;
+            font-family: 'Dancing Script', cursive;
+        }
+    }
+    &:hover {
+        svg {
+            filter: brightness(0.9);
+        }
     }
 `;
 
@@ -98,13 +108,17 @@ const Navigation = () => {
                 </li>
             </FirstNav>
             <LogoContainer>
-                <span>Gatsby's</span>
+                <span>
+                    <Link to="/">Gatsby's</Link>
+                </span>
                 <Link to="/">
                     <PizzaSVGContainer>
                         <PizzaSVG />
                     </PizzaSVGContainer>
                 </Link>
-                <span>Pizzeria</span>
+                <span>
+                    <Link to="/">Pizzeria</Link>
+                </span>
             </LogoContainer>
             <SecondNav>
                 <li>
