@@ -8,6 +8,7 @@ export const COLOURS = {
     textMain: 'hsl(100,0%,15%)',
     textSecondary: '#333',
     maroon: '#5a053e',
+    textBright: 'hsl(0,0%,85%)',
 };
 
 export const QUERIES = {
