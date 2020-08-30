@@ -70,6 +70,12 @@ const TextSection = styled.section`
     }
 `;
 
+const ButtonConatiner = styled.div`
+    display: grid;
+    justify-content: center;
+    grid-template-columns: minmax(1rem, 15rem);
+`;
+
 const Home = () => {
     const data = useStaticQuery(getImages);
     console.log(data);
@@ -88,7 +94,9 @@ const Home = () => {
                             slice
                         </h2>
                         <Link to="/menu">
-                            <Button>MENU</Button>
+                            <ButtonConatiner>
+                                <Button>MENU</Button>
+                            </ButtonConatiner>
                         </Link>
                     </TextSection>
                     <ImageContainer>
@@ -136,7 +144,9 @@ const Home = () => {
                     <TextSection>
                         <h2>order out</h2>
                         <Link to="/delivery">
-                            <Button>DELIVERY</Button>
+                            <ButtonConatiner>
+                                <Button>DELIVERY</Button>
+                            </ButtonConatiner>
                         </Link>
                     </TextSection>
                     <ImageContainer>
