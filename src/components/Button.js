@@ -23,8 +23,8 @@ const Container = styled.button`
         content: '';
         width: 20px;
         height: 20px;
-        border-top: 3px solid ${COLOURS.pink};
-        border-left: 3px solid ${COLOURS.pink};
+        border-top: 3px solid ${COLOURS.veryDarkBlue};
+        border-left: 3px solid ${COLOURS.veryDarkBlue};
         position: absolute;
         top: -5px;
         left: -5px;
@@ -34,8 +34,8 @@ const Container = styled.button`
         content: '';
         width: 20px;
         height: 20px;
-        border-bottom: 3px solid ${COLOURS.pink};
-        border-right: 3px solid ${COLOURS.pink};
+        border-bottom: 3px solid ${COLOURS.veryDarkBlue};
+        border-right: 3px solid ${COLOURS.veryDarkBlue};
         position: absolute;
         bottom: -5px;
         right: -5px;
