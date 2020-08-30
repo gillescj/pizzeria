@@ -54,6 +54,7 @@ const MenuSection = ({ info: { heading, subHeading }, sectionItems }) => {
                 price={item.price}
                 description={item.description}
                 vegetarian={item.vegetarian}
+                key={item.title}
             />
         );
     });

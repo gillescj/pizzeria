@@ -19,6 +19,7 @@ const renderedMenuSections = drinkMenuList.map((section) => {
             name={section.name}
             info={section.info}
             sectionItems={section.sectionItems}
+            key={section.name}
         />
     );
 });
