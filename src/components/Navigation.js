@@ -37,7 +37,7 @@ const NavUl = styled.ul`
     z-index: 2;
     li * {
         font-family: 'Raleway', sans-serif;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         color: white;
         font-weight: bold;
         text-decoration: inherit;
