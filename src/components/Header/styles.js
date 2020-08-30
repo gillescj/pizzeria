@@ -1,10 +1,14 @@
 import { COLOURS, QUERIES } from 'src/styling';
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.header`
     display: grid;
     background: ${COLOURS.coral};
-    box-shadow: 0 4px 10px hsla(0, 0%, 0%, 20%);
+    box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.12), 0 1px 2px hsla(0, 0%, 0%, 0.24);
+    @media (${QUERIES.medium}) {
+        box-shadow: none;
+        background: ${COLOURS.pink};
+    }
 `;
 
 export const Wrapper = styled.div`
@@ -22,81 +26,9 @@ export const MiddleBanner = styled.div`
     grid-column: 1;
     height: 1rem;
     align-self: center;
-    box-shadow: 0 4px 10px hsla(0, 0%, 0%, 20%);
+    box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.12), 0 1px 2px hsla(0, 0%, 0%, 0.24);
     z-index: 1;
-`;
-
-export const NavContainer = styled.nav`
-    display: grid;
-    max-width: ${QUERIES.maxWidth};
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    padding: 1rem;
-    a {
-        color: inherit;
+    @media (${QUERIES.medium}) {
+        display: none;
     }
-`;
-
-export const LogoContainer = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-    span {
-        color: white;
-        font-size: 2rem;
-        font-family: 'Dancing Script', cursive;
-    }
-`;
-
-export const NavUl = styled.ul`
-    display: flex;
-    list-style-type: none;
-    justify-self: center;
-    z-index: 2;
-    li * {
-        font-family: 'Raleway', sans-serif;
-        font-size: 1.2rem;
-        color: white;
-        font-weight: bold;
-        text-decoration: inherit;
-    }
-    li > a {
-        position: relative;
-        &::after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            bottom: -9px;
-            left: 0;
-            right: 0;
-            background-color: white;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s cubic-bezier(0.04, 0.77, 0.44, 1.01);
-        }
-        &:hover {
-            &::after {
-                visibility: visible;
-                opacity: 1;
-                transform: translateY(-6px);
-            }
-        }
-    }
-`;
-
-export const FirstNav = styled(NavUl)`
-    li {
-        margin-right: 2rem;
-    }
-`;
-export const SecondNav = styled(NavUl)`
-    li {
-        margin-left: 2rem;
-    }
-`;
-
-export const SVGContainer = styled.div`
-    padding: 0 1rem;
 `;
