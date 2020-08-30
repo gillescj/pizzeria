@@ -27,6 +27,9 @@ const Header = styled.header`
 
 const Price = styled.span`
     text-align: end;
+    padding-left: 1rem;
+    align-self: center;
+    white-space: nowrap;
 `;
 
 const Description = styled.p`
