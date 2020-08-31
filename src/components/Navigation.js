@@ -3,6 +3,8 @@ import { COLOURS, QUERIES } from 'src/styling';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import PizzaSVG from 'src/assets/svgs/pizza.svg';
+import NavItem from './NavItem';
+import MenuDropdown from './MenuDropdown';
 
 export const Container = styled.nav`
     display: grid;
@@ -22,7 +24,6 @@ const LogoContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2;
     svg {
         transition: filter 300ms;
     }
@@ -103,9 +104,9 @@ const Navigation = () => {
                 <li>
                     <Link to="/about">About</Link>
                 </li>
-                <li>
-                    <Link to="/menu">Menu</Link>
-                </li>
+                <NavItem to="/menu" name="Menu">
+                    <MenuDropdown />
+                </NavItem>
             </FirstNav>
             <LogoContainer>
                 <span>
