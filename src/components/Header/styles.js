@@ -27,7 +27,6 @@ export const MiddleBanner = styled.div`
     height: 1rem;
     align-self: center;
     box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.12), 0 1px 2px hsla(0, 0%, 0%, 0.24);
-    z-index: 1;
     @media (${QUERIES.medium}) {
         display: none;
     }
