@@ -5,6 +5,7 @@ import Layout from 'src/components/Layout';
 import PageHeader from 'src/components/PageHeader';
 import ContactForm from 'src/components/ContactForm';
 import Map from 'src/components/Map';
+import SocialMedia from '../components/SocialMedia';
 
 const Container = styled.div`
     display: grid;
@@ -29,7 +30,7 @@ const TextDetails = styled.section`
 const ContactInfo = styled.section`
     display: grid;
     grid-gap: 2rem;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 0.5fr 1fr;
     @media (${QUERIES.medium}) {
         grid-template-columns: 1fr;
     }
@@ -41,7 +42,7 @@ const ContactInfoSection = styled.section`
     border-radius: 3px;
     padding: 1rem 2rem 2rem 2rem;
     color: ${COLOURS.textMain};
-    width: 22rem;
+    width: 100%;
     header {
         margin-bottom: 1rem;
         h3 {
@@ -49,6 +50,7 @@ const ContactInfoSection = styled.section`
             text-transform: uppercase;
             text-align: center;
             font-size: 2rem;
+            font-weight: 600;
             padding-bottom: 1rem;
         }
     }
@@ -57,8 +59,17 @@ const ContactInfoSection = styled.section`
         font-size: 1.5rem;
         text-align: center;
     }
+    svg {
+        color: ${COLOURS.textMain};
+    }
     @media (${QUERIES.medium}) {
         width: 100%;
+    }
+`;
+
+const ConnectInfoSection = styled(ContactInfoSection)`
+    div {
+        justify-content: center;
     }
 `;
 
@@ -111,6 +122,12 @@ const Contact = () => {
                             <li>A1A 1A1</li>
                         </ul>
                     </ContactInfoSection>
+                    <ConnectInfoSection>
+                        <header>
+                            <h3>Connect</h3>
+                        </header>
+                        <SocialMedia />
+                    </ConnectInfoSection>
                     <ContactInfoSection>
                         <header>
                             <h3>Call Us</h3>
