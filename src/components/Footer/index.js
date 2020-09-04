@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Wrapper, InfoContainer } from './styles';
+import SocialMedia from '../SocialMedia';
 
 const Footer = () => {
     return (
@@ -26,13 +27,14 @@ const Footer = () => {
                     </ul>
                 </InfoContainer>
                 <InfoContainer>
-                    <h3>Phone</h3>
+                    <h3>Contact</h3>
                     <li>Delivery: (111) 111-1111</li>
                     <li>House: (111) 111-1111</li>
+                    <li>fake-email@fake.com</li>
                 </InfoContainer>
                 <InfoContainer>
-                    <h3>Email</h3>
-                    <li>fake-email@fake.com</li>
+                    <h3>Social Media</h3>
+                    <SocialMedia />
                 </InfoContainer>
             </Wrapper>
         </Container>
