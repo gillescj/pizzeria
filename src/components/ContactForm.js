@@ -16,6 +16,7 @@ const Container = styled.div`
 const Input = styled.input`
     padding: 1rem;
     font-size: 1.2rem;
+    width: 100%;
 `;
 
 const Textarea = styled.textarea`
@@ -23,6 +24,7 @@ const Textarea = styled.textarea`
     font-size: 1.2rem;
     height: 12rem;
     resize: none;
+    width: 100%;
 `;
 
 const ContactForm = () => {
