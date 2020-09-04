@@ -7,12 +7,14 @@ import DropdownItem from './DropdownItem';
 const Container = styled.div`
     position: absolute;
     display: grid;
+    grid-gap: 3px;
     top: 78px;
     padding: 1rem;
     color: white;
     background: ${COLOURS.veryDarkBlue};
     border-radius: 10px;
     transition: display 3s ease-in-out;
+    transform: translateX(-20px);
 `;
 
 const MenuDropdown = () => {
