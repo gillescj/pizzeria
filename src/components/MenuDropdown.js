@@ -7,23 +7,23 @@ import DropdownItem from './DropdownItem';
 const Container = styled.div`
     position: absolute;
     display: grid;
-    grid-gap: 1rem;
-    top: 85px;
-    padding: 2rem;
+    top: 78px;
+    padding: 1rem;
     color: white;
     background: ${COLOURS.veryDarkBlue};
-    border-radius: 4px;
+    border-radius: 10px;
+    transition: display 3s ease-in-out;
 `;
 
-const MenuDropdown = ({}) => {
+const MenuDropdown = () => {
     return (
         <Container>
-            <DropdownItem>
-                <Link to="/menu">Main Menu</Link>
-            </DropdownItem>
-            <DropdownItem>
-                <Link to="/drinkMenu">Drink Menu</Link>
-            </DropdownItem>
+            <Link to="/menu">
+                <DropdownItem>Main Menu</DropdownItem>
+            </Link>
+            <Link to="/drinkMenu">
+                <DropdownItem>Drink Menu</DropdownItem>
+            </Link>
         </Container>
     );
 };
