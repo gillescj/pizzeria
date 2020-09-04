@@ -42,7 +42,8 @@ const HamburgerButton = styled.button`
 `;
 
 const Dropdown = styled.ul`
-    display: ${(props) => (props.open ? 'block' : 'none')};
+    height: ${(props) => (props.open ? '100%' : '0')};
+    visibility: ${(props) => (props.open ? 'visible' : 'collapse')};
     background: ${COLOURS.veryDarkBlue};
     color: white;
     li {
