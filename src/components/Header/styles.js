@@ -7,7 +7,7 @@ export const Container = styled.header`
     box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.12), 0 1px 2px hsla(0, 0%, 0%, 0.24);
     @media (${QUERIES.medium}) {
         box-shadow: none;
-        background: ${COLOURS.pink};
+        background: ${COLOURS.bluewood};
     }
 `;
 
