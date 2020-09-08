@@ -16,7 +16,7 @@ export const menuList = [
                 vegetarian: true,
             },
             {
-                title: 'Spicey Nachos',
+                title: 'Spicy Nachos',
                 price: '$12.00',
                 description: `Vel in omnis possimus nisi quia ratione quis. Repellendus architecto reprehenderit nam est et doloremque aut nesciunt. Sed eum quod distinctio. Illo culpa quidem neque. Beatae aut sed error eius aperiam temporibus omnis.`,
                 vegetarian: true,
@@ -79,7 +79,7 @@ export const menuList = [
                 vegetarian: true,
             },
             {
-                title: 'Spicey Salami',
+                title: 'Spicy Salami',
                 price: '$16.50',
                 description: `Bushwick fam chia pug, man braid PBR&B mlkshk vaporware enamel pin mumblecore occupy. Succulents iceland stumptown, XOXO fixie tilde biodiesel DIY palo santo vape shoreditch venmo drinking vinegar.`,
             },
