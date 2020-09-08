@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const Container = styled.header`
     display: grid;
-    background: ${COLOURS.coral};
+    background: #2f4858;
     box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.12), 0 1px 2px hsla(0, 0%, 0%, 0.24);
     @media (${QUERIES.medium}) {
         box-shadow: none;
@@ -20,13 +20,13 @@ export const Wrapper = styled.div`
 `;
 
 export const MiddleBanner = styled.div`
-    background: ${COLOURS.pink};
+    background: ${COLOURS.veryDarkBlue};
     padding: 1.5rem;
     grid-row: 1;
     grid-column: 1;
     height: 1rem;
     align-self: center;
-    box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.12), 0 1px 2px hsla(0, 0%, 0%, 0.24);
+    box-shadow: 0 0px 12px hsla(0, 0%, 100%, 0.05);
     @media (${QUERIES.medium}) {
         display: none;
     }
