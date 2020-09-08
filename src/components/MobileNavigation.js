@@ -38,6 +38,27 @@ const HamburgerButton = styled.button`
     svg {
         display: block;
         margin: auto;
+
+        #top {
+            transition: all 150ms;
+            transform: ${({ open }) => (open ? 'translateY(6px)' : 'translateY(0)')};
+            opacity: ${({ open }) => (open ? '0' : '1')};
+        }
+        #middle {
+            transition: all 100ms 150ms;
+            transform: ${({ open }) => (open ? 'rotate(45deg)' : 'rotate(0deg)')};
+            transform-origin: center;
+        }
+        #middle-reverse {
+            transition: all 100ms 150ms;
+            transform: ${({ open }) => (open ? 'rotate(-45deg)' : 'rotate(0deg)')};
+            transform-origin: center;
+        }
+        #bottom {
+            transition: all 150ms;
+            transform: ${({ open }) => (open ? 'translateY(-6px)' : 'translateY(0)')};
+            opacity: ${({ open }) => (open ? '0' : '1')};
+        }
     }
 `;
 
@@ -72,6 +93,7 @@ const MobileNavigation = () => {
                         <StoreHeading>Gatsby's Pizzeria</StoreHeading>
                     </Link>
                     <HamburgerButton
+                        open={open}
                         onClick={() => {
                             setOpen((previousOpen) => !previousOpen);
                         }}
