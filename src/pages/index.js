@@ -78,11 +78,9 @@ const ButtonConatiner = styled.div`
 
 const Home = () => {
     const data = useStaticQuery(getImages);
-    console.log(data);
     const {
         allFile: { nodes: images },
     } = data;
-    console.log(images);
 
     return (
         <Layout>
