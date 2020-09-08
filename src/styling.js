@@ -1,6 +1,7 @@
 export const COLOURS = {
     coral: '#FF847C',
     pink: '#E84A5F',
+    bluewood: '#2f4858',
     veryDarkBlue: '#2A363B',
     darkBlue: 'hsl(198, 57%, 40%)',
     darkGrey: 'hsl(100,0%,40%)',
