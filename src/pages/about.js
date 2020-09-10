@@ -37,9 +37,12 @@ const Wrapper = styled.div`
 `;
 
 const ImageContainer = styled.div`
-    align-self: center;
+    display: grid;
     @media (${QUERIES.medium}) {
         padding: 0 5rem;
+    }
+    @media (${QUERIES.small}) {
+        padding: 0;
     }
 `;
 
@@ -63,6 +66,9 @@ const TextSection = styled.section`
     @media (${QUERIES.medium}) {
         padding: 0 5rem;
         padding-top: 1rem;
+    }
+    @media (${QUERIES.small}) {
+        padding: 0;
     }
 `;
 
