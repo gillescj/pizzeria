@@ -17,6 +17,7 @@ const MainWrapper = styled.div`
     justify-content: center;
     main {
         padding: ${(props) => props.padding};
+        margin-bottom: 5rem;
     }
 `;
 
