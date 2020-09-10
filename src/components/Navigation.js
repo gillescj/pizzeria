@@ -94,7 +94,7 @@ const Navigation = () => {
                 </span>
             </LogoContainer>
             <SecondNav>
-                {/* <NavItem to="/delivery" name="Delivery" /> */}
+                <NavItem to="/delivery" name="Delivery" />
                 <NavItem to="/contact" name="Contact" />
             </SecondNav>
         </Container>
