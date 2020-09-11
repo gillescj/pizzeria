@@ -1,8 +1,24 @@
 import React from 'react';
 import { QUERIES, COLOURS } from 'src/styling';
 import styled from 'styled-components';
+import { graphql, useStaticQuery } from 'gatsby';
 import Layout from 'src/components/Layout';
 import PageHeader from 'src/components/PageHeader';
+import Img from 'gatsby-image';
+
+const getImages = graphql`
+    {
+        file(relativePath: { eq: "uber-eats-logo.png" }) {
+            name
+            id
+            childImageSharp {
+                fixed(width: 320) {
+                    ...GatsbyImageSharpFixed
+                }
+            }
+        }
+    }
+`;
 
 const Container = styled.div`
     display: grid;
@@ -15,6 +31,7 @@ const TextInfo = styled.section`
     max-width: 50rem;
     margin: 0 auto;
     font-size: 1.2rem;
+    padding-bottom: 3rem;
     h2 {
         padding-bottom: 1rem;
         font-size: 2rem;
@@ -31,7 +48,13 @@ const TextInfo = styled.section`
     }
 `;
 
+const ImageContainer = styled.div`
+    justify-self: center;
+    cursor: pointer;
+`;
+
 const Delivery = () => {
+    const data = useStaticQuery(getImages);
     return (
         <Layout padding="0" maxWidth="100%">
             <PageHeader pageName="Delivery" />
@@ -72,6 +95,9 @@ const Delivery = () => {
                         quibusdam.
                     </p>
                 </TextInfo>
+                <ImageContainer>
+                    <Img fixed={data.file.childImageSharp.fixed} alt="Uber Eats Logo" />
+                </ImageContainer>
             </Container>
         </Layout>
     );
