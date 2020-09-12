@@ -39,6 +39,13 @@ const LogoContainer = styled.div`
             filter: brightness(0.9);
         }
     }
+    @media (${QUERIES.large}) {
+        span {
+            a {
+                font-size: 2rem;
+            }
+        }
+    }
 `;
 
 const NavUl = styled.ul`
@@ -68,6 +75,12 @@ const PizzaSVGContainer = styled.div`
     svg {
         width: 90px;
         height: 90px;
+    }
+    @media (${QUERIES.large}) {
+        padding: 0 0.3rem;
+        svg {
+            transform: scale(0.8);
+        }
     }
 `;
 
