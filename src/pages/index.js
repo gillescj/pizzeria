@@ -141,9 +141,9 @@ const Home = () => {
                 <MainSection direction="left">
                     <TextSection>
                         <h2>order out</h2>
-                        <Link to="/delivery">
+                        <Link to="/takeOut">
                             <ButtonConatiner>
-                                <Button>DELIVERY</Button>
+                                <Button>Take Out</Button>
                             </ButtonConatiner>
                         </Link>
                     </TextSection>

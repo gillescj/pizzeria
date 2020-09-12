@@ -53,14 +53,20 @@ const ImageContainer = styled.div`
     cursor: pointer;
 `;
 
-const Delivery = () => {
+const TakeOut = () => {
     const data = useStaticQuery(getImages);
     return (
         <Layout padding="0" maxWidth="100%">
-            <PageHeader pageName="Delivery" />
+            <PageHeader pageName="Take Out & Delivery" />
             <Container>
                 <TextInfo>
-                    <h2>Delivery Update</h2>
+                    <h2>Take Out Update</h2>
+                    <p>
+                        Dolor praesentium non aut et adipisci est odio qui. Fugiat dolorem
+                        ut quidem. Eveniet quae soluta reiciendis. Provident perferendis
+                        excepturi repellat consequuntur libero.
+                    </p>
+                    <h2>Delivery</h2>
                     <p>
                         Aut molestias maxime veritatis qui autem commodi quia dolorum.
                         Nihil et dolorem sit. Illo ut voluptatem vero consequuntur nobis.
@@ -103,4 +109,4 @@ const Delivery = () => {
     );
 };
 
-export default Delivery;
+export default TakeOut;

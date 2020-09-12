@@ -114,8 +114,8 @@ const MobileNavigation = () => {
                     <Link to="/drinkMenu">
                         <li>Drink Menu</li>
                     </Link>
-                    <Link to="/delivery">
-                        <li>Delivery</li>
+                    <Link to="/takeOut">
+                        <li>Take Out</li>
                     </Link>
                     <Link to="/contact">
                         <li>Contact</li>
