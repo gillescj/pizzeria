@@ -1,6 +1,6 @@
 # Gatsby's Pizzeria
 
-A fake family pizzeria restaurant.
+A small family owned pizzeria restaurant website.
 
 Created to try out GatsbyJS / GraphQL and use the Gatsby Image API.
 
