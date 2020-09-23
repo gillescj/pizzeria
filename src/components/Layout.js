@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { QUERIES } from 'src/styling';
 import Header from './Header';
 import Footer from './Footer';
+import { Helmet } from 'react-helmet';
 
 const Container = styled.div`
     display: grid;
@@ -28,6 +29,14 @@ const Layout = ({
 }) => {
     return (
         <Container>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Gatsby's Pizzeria</title>
+                <meta
+                    name="description"
+                    content="Pizzeria restaurant site made with GatsbyJS."
+                />
+            </Helmet>
             <Header />
             <MainWrapper maxWidth={maxWidth} padding={padding}>
                 <main>{children}</main>

@@ -1,8 +1,4 @@
 module.exports = {
-    siteMetadata: {
-        title: "Gatsby's Pizzeria",
-        description: 'Pizzeria restaurant site made with GatsbyJS.',
-    },
     plugins: [
         `gatsby-plugin-styled-components`,
         `gatsby-transformer-sharp`,
@@ -10,6 +6,7 @@ module.exports = {
         `gatsby-plugin-root-import`,
         'gatsby-plugin-react-svg',
         'gatsby-plugin-react-leaflet',
+        `gatsby-plugin-react-helmet`,
         {
             resolve: `gatsby-source-filesystem`,
             options: {
