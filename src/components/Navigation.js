@@ -1,5 +1,5 @@
 import React from 'react';
-import { COLOURS, QUERIES } from 'src/styling';
+import { QUERIES } from 'src/styling';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import PizzaSVG from 'src/assets/svgs/pizza.svg';
