@@ -2,6 +2,7 @@ import React from 'react';
 import { COLOURS } from 'src/styling';
 import styled from 'styled-components';
 import LeafSVG from 'src/assets/svgs/leaf.svg';
+import MenuIcon from './MenuIcon';
 
 const Container = styled.section`
     display: grid;
@@ -56,7 +57,13 @@ const MenuItem = ({ title, price, description, vegetarian }) => {
             {!description ? null : (
                 <>
                     <Description>{description}</Description>
-                    <div>{vegetarian ? <LeafSVG /> : null}</div>
+                    <div>
+                        {vegetarian ? (
+                            <MenuIcon message="Vegetarian">
+                                <LeafSVG />
+                            </MenuIcon>
+                        ) : null}
+                    </div>
                 </>
             )}
         </Container>
