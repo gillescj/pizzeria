@@ -12,6 +12,31 @@ const Container = styled.li`
     padding: 5px 0;
 `;
 
+const NavItemLink = styled(Link)`
+    &.activeLink {
+        > div {
+            &::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                bottom: -3px;
+                left: 0;
+                right: 0;
+                background-color: white;
+                opacity: 1;
+                visibility: visible;
+                transition: none;
+            }
+            &:hover {
+                &::after {
+                    transform: none;
+                }
+            }
+        }
+    }
+`;
+
 const LabelContainer = styled.div`
     display: flex;
     svg {
@@ -46,12 +71,12 @@ const NavItem = ({ to, name, children }) => {
 
     return (
         <Container onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
-            <Link to={to}>
+            <NavItemLink to={to} activeClassName="activeLink">
                 <LabelContainer>
                     {name}
                     {children ? <ChevDownSVG /> : null}
                 </LabelContainer>
-            </Link>
+            </NavItemLink>
             {open && children}
         </Container>
     );
