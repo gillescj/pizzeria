@@ -27,7 +27,7 @@ const MenuDropdown = () => {
     const animProps = useSpring({
         opacity: 1,
         from: { opacity: 0 },
-        config: { duration: 300 },
+        config: { velocity: 4, mass: 5, clamp: true },
     });
 
     return (

@@ -23,7 +23,7 @@ const Tooltip = ({ children }) => {
     const animProps = useSpring({
         opacity: 1,
         from: { opacity: 0 },
-        config: { mass: 10 },
+        config: { mass: 10, clamp: true },
     });
     return (
         <AnimationContianer>
