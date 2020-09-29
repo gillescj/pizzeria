@@ -1,10 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import { COLOURS } from 'src/styling';
+import { useSpring, animated } from 'react-spring';
 
-const Container = styled.div`
+const AnimationContianer = styled.div`
     position: absolute;
     display: inline-block;
+`;
+
+const Container = styled.div`
     padding: 0.75rem 1rem;
     margin-left: 1rem;
     border: 2px solid ${COLOURS.textMain};
@@ -16,7 +20,18 @@ const Container = styled.div`
 `;
 
 const Tooltip = ({ children }) => {
-    return <Container>{children}</Container>;
+    const animProps = useSpring({
+        opacity: 1,
+        from: { opacity: 0 },
+        config: { mass: 10 },
+    });
+    return (
+        <AnimationContianer>
+            <animated.div style={animProps}>
+                <Container>{children}</Container>
+            </animated.div>
+        </AnimationContianer>
+    );
 };
 
 export default Tooltip;
