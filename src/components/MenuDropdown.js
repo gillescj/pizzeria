@@ -5,17 +5,22 @@ import styled from 'styled-components';
 import DropdownItem from './DropdownItem';
 import { useSpring, animated } from 'react-spring';
 
-const Container = styled.div`
+const HoverWrapper = styled.div`
     position: absolute;
+    padding: 1rem;
+    padding-top: 0.5rem;
+    transform: translateX(-40px);
+`;
+
+const Container = styled.div`
     display: grid;
     grid-gap: 3px;
-    top: 78px;
     padding: 1rem;
     color: white;
     background: ${COLOURS.veryDarkBlue};
-    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     transition: display 3s ease-in-out;
-    transform: translateX(-20px);
 `;
 
 const MenuDropdown = () => {
@@ -27,14 +32,16 @@ const MenuDropdown = () => {
 
     return (
         <animated.div style={animProps}>
-            <Container>
-                <Link to="/menu">
-                    <DropdownItem>Main Menu</DropdownItem>
-                </Link>
-                <Link to="/drinkMenu">
-                    <DropdownItem>Drink Menu</DropdownItem>
-                </Link>
-            </Container>
+            <HoverWrapper>
+                <Container>
+                    <Link to="/menu">
+                        <DropdownItem>Main Menu</DropdownItem>
+                    </Link>
+                    <Link to="/drinkMenu">
+                        <DropdownItem>Drink Menu</DropdownItem>
+                    </Link>
+                </Container>
+            </HoverWrapper>
         </animated.div>
     );
 };
