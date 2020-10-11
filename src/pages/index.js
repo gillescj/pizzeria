@@ -132,9 +132,9 @@ const Home = () => {
                         </h2>
 
                         <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio
-                            totam fugiat ex vero! Modi facilis soluta voluptas hic labore
-                            quas consectetur repellat sequi corporis quod?
+                            Our beautiful interior dining room features a warm and cozy
+                            atmosphere for dining in or enjoy dinner al fresco on our
+                            secluded patio.
                         </p>
                     </TextSection>
                 </MainSection>
