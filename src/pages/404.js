@@ -29,7 +29,7 @@ const error = () => {
                 <h1>Oops, something went wrong </h1>
                 <FrownSVG />
                 <p>
-                    The page you tried page couldn't be found. You may have typed in the
+                    The page you tried couldn't be found. You may have typed in the
                     address incorrectly or used an outdated link. Navigate to a different
                     page or <Link to="/">click here</Link> to go back to the main page.
                 </p>
