@@ -93,25 +93,22 @@ const About = () => {
                     <TextSection>
                         <h2>Our Story</h2>
                         <p>
-                            Facere consequatur sit praesentium. Saepe aliquam deserunt
-                            veniam ex. Ut repellendus ut repellendus harum ipsam sed
-                            velit. Velit non tempora rerum pariatur quis sint. Quo
-                            consequuntur laborum expedita in sunt vero. Rerum quam in ut
-                            dolores magni reiciendis. Enim necessitatibus expedita quod
-                            illum vitae et nesciunt est. Voluptas odit assumenda eligendi.
-                            Ullam et consectetur perferendis qui accusamus et. Voluptatem
-                            cumque facilis hic sit quasi rerum ut delectus. Quisquam
-                            nesciunt eos soluta odit in quam tenetur. Illo reiciendis
-                            beatae excepturi. Itaque ea aperiam porro velit culpa
-                            voluptatem. Cum iure culpa minus nostrum sed rerum. Voluptas
-                            officiis dolorem quis hic dolorem nostrum.
+                            Our story begins with our beloved great grandfather and his
+                            simple homegrown recipes.
                         </p>
                         <p>
-                            Et eaque fugit quas qui autem ut dicta amet. Sunt asperiores
-                            eum et ut porro qui. Fugiat ut deserunt sed fugiat eveniet. Et
-                            expedita qui aut et sit accusantium excepturi eius. Et
-                            corrupti omnis inventore fugit. Est est adipisci qui impedit
-                            nisi excepturi.
+                            At Gatsby's Pizzeria, we know that pizza isn't just the
+                            combination of pizza dough, tomato sauce and cheese. We take
+                            our pizza very seriously using our decades-old secret family
+                            hand-pulled sourdough crust recipe, topped with our slow
+                            roasted san marzano tomatoes and fresh basil sauce and topped
+                            with housemade fresh ooey-gooey mozzarella and the freshest
+                            locally sourced toppings you can find.
+                        </p>
+                        <p>
+                            Come for our pizza and stay for the warm and welcoming
+                            atmosphere or take the taste of Gatsby's home with our
+                            extended take-out menu.
                         </p>
                     </TextSection>
                 </Wrapper>
